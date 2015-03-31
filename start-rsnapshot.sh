@@ -1,0 +1,8 @@
+#!/bin/bash
+
+docker rm -f rsnapshot
+
+docker run --name rsnapshot -d \
+  -v /var/docker:/source \
+  -v /home/marco/backup:/target \
+  flyingpie/rsnapshot
