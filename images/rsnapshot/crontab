@@ -1,0 +1,2 @@
+0 */4 * * *	/usr/bin/rsnapshot hourly
+30 23 * * *	/usr/bin/rsnapshot daily

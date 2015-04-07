@@ -1,0 +1,43 @@
+<br />
+
+<b>1.4 version</b> - 22 october 2011<br />
+
+<ul>
+<li>Add autoloader</li>
+<li>Tweak UpHyperlight css</li>
+<li>Add GPL file</li>
+<li>Add PayPal donation button to documentation</li>
+<li>CMSMS 1.10 compatible</li>
+</ul><br />
+
+<b>1.3 version</b> - 20 jun 2011 <br />
+
+<ul>
+<li>Module added to translation center</li>
+<li>Added dutch translation lang/ext/nl_NL.php</li>
+</ul><br />
+
+<b>1.2 version</b> - 11 jun 2011 <br />
+
+<ul>
+<li>Change module contructor from UpHyperlight() to __construct()</li>
+<li>MaximumCMSVersion from 1.9.9 -> 1.10.9</li>
+</ul><br />
+
+<b>1.1 version</b> - 20 feb 2011 <br />
+
+<ul>
+<li>remove white space before ?> in UpHyperlight.module.php</li>
+<li>fix typo in lang file friendly_name instead of friendlyname</li>
+<li>some css teaks for line-numbers css</li>
+</ul><br />
+
+<b>1.0 initial</b> version - 3 jan 2011
+
+
+
+
+
+
+
+

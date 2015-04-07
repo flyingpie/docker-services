@@ -1,0 +1,213 @@
+a:active, a:link, a:visited
+{
+    color: #777777;
+}
+
+a:hover
+{
+    color: #1b59b7;
+}
+
+body
+{
+    background-color: #727272;
+    font-family: verdana, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3
+{
+    color: #444444;
+    margin: 0;
+}
+
+h1
+{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+h2
+{
+    border-bottom: 1px #444444 solid;
+    font-size: 20px;
+    font-style: italic;
+    text-align: right;
+}
+
+h3
+{
+    font-size: 18px;
+}
+
+hr
+{
+    background-color: #444444;
+    border: 0;
+    height: 1px;
+}
+
+img
+{
+    border-style: none;
+}
+
+ul
+{
+    list-style-type: square;
+}
+
+li
+{
+    margin: 4px;
+}
+
+ul ul
+{
+    padding-left: 18px;
+}
+
+#container
+{
+    background-color: #ffffff;
+}
+
+#header
+{
+    background-image: url('http://www.flyingpie.nl/images/template/flyingpie/header.png');
+    background-repeat: repeat-x;
+    height: 50px;
+}
+
+#header_large
+{
+    background-image: url('http://www.flyingpie.nl/images/template/flyingpie/header_large.png');
+    background-repeat: repeat-x;
+    height: 150px;
+}
+
+#logo
+{
+    background-image: url('http://www.flyingpie.nl/images/template/flyingpie/logo.png');
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 1000px;
+    height: 50px;
+}
+
+#logo_large
+{
+    background-image: url('http://www.flyingpie.nl/images/template/flyingpie/logo_large.png');
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 1000px;
+    height: 200px;
+}
+
+#menu
+{
+    
+}
+
+#menu-inner
+{
+    margin: auto;
+    width: 1000px;
+}
+
+#content
+{
+    margin: 30px auto 90px auto;
+    width: 1000px;
+}
+
+#footer
+{
+    background-color: #727272;
+    background-image: url('http://www.flyingpie.nl/images/template/flyingpie/footer.png');
+    background-repeat: repeat-x;
+    color: #dddddd;
+    padding: 5px 0;
+    width: 100%;
+}
+
+#footer-content
+{
+    margin: auto;
+    width: 1000px;
+}
+
+.menu
+{
+    border-bottom: 1px grey solid;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul
+{
+    margin: 4px;
+    padding: 0;
+    text-align: left;
+}
+
+.menu li
+{
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.portfolio-project
+{
+    margin: 40px 0;
+}
+
+.portfolio-project a:active, .portfolio-project a:link, .portfolio-project a:visited
+{
+    text-decoration: none;
+}
+
+.portfolio-project img
+{
+    border: 1px grey solid;
+    float: left;
+    margin-right: 40px;
+}
+
+.popup-image-container
+{
+    border: 1px #000000 solid;
+    margin: 10px 5px;
+    position: relative;
+    width: 150px;
+    height: 100px;
+}
+
+.popup-image-text-container
+{
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 10px;
+    opacity: 0.8;
+    filter=alpha(opacity=80);
+    text-align: right;
+    width: 100%;
+}
+
+.popup-image-text
+{
+    padding: 4px;
+}
+
+.content-menu
+{
+    border: 1px grey solid;
+    float: right;
+    width: 200px;
+}
