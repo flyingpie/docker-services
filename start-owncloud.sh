@@ -14,5 +14,6 @@ docker run --name owncloud -d \
   -p 80 \
   -v /var/docker/owncloud/config:/etc/webapps/owncloud/config \
   -v /var/docker/owncloud/data:/usr/share/webapps/owncloud/data \
+  -v /var/docker/owncloud/owncloud.conf:/etc/httpd/conf/extra/owncloud.conf \
   --restart=always \
-  flyingpie/owncloud
+  l3iggs/owncloud
