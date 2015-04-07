@@ -14,6 +14,7 @@ POSTGRES_TTRSS_PASSWORD=password
 POSTGRES_TTRSS_DB=ttrss
 
 VHOST_CLOUD=cloud.flyingpie.nl
+VHOST_COUCHPOTATO=couchpotato.flyingpie.nl
 VHOST_DEV=dev.flyingpie.nl
 VHOST_FILESERVER=files.flyingpie.nl
 VHOST_FLYINGPIE=www.flyingpie.nl
@@ -21,4 +22,6 @@ VHOST_GITLAB=git.flyingpie.nl
 VHOST_PHPMYADMIN=phpmyadmin.flyingpie.nl
 VHOST_PHPPGADMIN=phppgadmin.flyingpie.nl
 VHOST_RSS=rss.flyingpie.nl
+VHOST_SABNZBD=sabnzbd.flyingpie.nl
+VHOST_SICKRAGE=sickrage.flyingpie.nl
 VHOST_TESSLER=tessler.flyingpie.nl
