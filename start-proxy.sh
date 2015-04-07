@@ -12,4 +12,5 @@ docker run --name proxy -d \
   -v /var/docker/proxy/proxy.conf:/etc/nginx/conf.d/proxy.conf:ro \
   -v /var/run/docker.sock:/tmp/docker.sock \
   -v /etc/localtime:/etc/localtime:ro \
+  --restart=always \
   jwilder/nginx-proxy
