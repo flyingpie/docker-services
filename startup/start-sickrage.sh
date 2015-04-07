@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source variables.sh
+
 docker rm -f sickrage
 
 docker run --name sickrage -d \

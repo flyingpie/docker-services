@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source variables.sh
+
 docker rm -f sabnzbd
 
 docker run --name sabnzbd -d \
