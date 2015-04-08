@@ -12,4 +12,4 @@ docker run --name rss -d \
   -e DB_USER=$POSTGRES_TTRSS_USER \
   -e DB_PASS=$POSTGRES_TTRSS_PASSWORD \
   --restart=always \
-  clue/ttrss
+  flyingpie/ttrss
