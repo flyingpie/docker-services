@@ -13,6 +13,7 @@ POSTGRES_TTRSS_USER=ttrss
 POSTGRES_TTRSS_PASSWORD=password
 POSTGRES_TTRSS_DB=ttrss
 
+VHOST_BOOKS=books.flyingpie.nl
 VHOST_CLOUD=cloud.flyingpie.nl
 VHOST_COUCHPOTATO=couchpotato.flyingpie.nl
 VHOST_DEV=dev.flyingpie.nl
