@@ -9,9 +9,14 @@ MYSQL_ROOT_PASSWORD=password
 
 POSTGRES_ROOT_USER=root
 POSTGRES_ROOT_PASSWORD=password
+
 POSTGRES_TTRSS_USER=ttrss
 POSTGRES_TTRSS_PASSWORD=password
 POSTGRES_TTRSS_DB=ttrss
+
+POSTGRES_GITLAB_USER=gitlab
+POSTGRES_GITLAB_PASSWORD=password
+POSTGRES_GITLAB_DB=gitlab
 
 TRANSMISSION_USER=marco
 TRANSMISSION_PASSWORD=password
@@ -30,3 +35,4 @@ VHOST_SABNZBD=sabnzbd.flyingpie.nl
 VHOST_SICKRAGE=sickrage.flyingpie.nl
 VHOST_TESSLER=tessler.flyingpie.nl
 VHOST_TRANSMISSION=transmission.flyingpie.nl
+VHOST_WEBMAIL=mail.flyingpie.nl
