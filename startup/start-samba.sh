@@ -10,4 +10,5 @@ docker run --name samba -d \
   -p 445:445 \
   -v /var/docker/samba/smb.conf:/etc/samba/smb.conf \
   -v /media:/media \
+  --restart=always \
   flyingpie/samba
