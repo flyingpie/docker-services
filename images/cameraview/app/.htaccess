@@ -1,0 +1,5 @@
+AuthName "Camera"
+AuthType Basic
+AuthUserFile /htpasswd
+require valid-user
+

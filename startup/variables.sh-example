@@ -1,5 +1,8 @@
 #!/bin/bash
 
+CAMERA_USERNAME=marco
+CAMERA_PASSWORD=password
+
 MYSQL_CMSMS_PASSWORD=password
 MYSQL_CMSMS_USER=cmsms
 MYSQL_CMSMS_DB=cmsms
@@ -22,6 +25,7 @@ TRANSMISSION_USER=marco
 TRANSMISSION_PASSWORD=password
 
 VHOST_BOOKS=books.flyingpie.nl
+VHOST_CAMERA=camera.flyingpie.nl
 VHOST_CLOUD=cloud.flyingpie.nl
 VHOST_COUCHPOTATO=couchpotato.flyingpie.nl
 VHOST_DEV=dev.flyingpie.nl
