@@ -10,4 +10,5 @@ docker run --name cameraview -d \
   -e PASSWORD=$CAMERA_PASSWORD \
   -p 80 \
   -v /var/docker/camerasync/output:/app/video \
+  --restart=always \
   flyingpie/cameraview

@@ -7,4 +7,5 @@ docker rm -f camerasync
 docker run --name camerasync -d \
   -v /var/docker/camerasync/output:/output \
   -v /var/docker/camerasync/login.cfg:/login.cfg:ro \
+  --restart=always \
   flyingpie/camerasync:latest
