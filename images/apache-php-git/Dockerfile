@@ -27,4 +27,8 @@ EXPOSE 22 80
 
 VOLUME /root/.ssh
 
-CMD ["/usr/bin/supervisord"]
+ENV ROOT_FOLDER /
+
+ADD ./run.sh /run.sh
+
+CMD ["sh", "/run.sh"]
