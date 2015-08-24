@@ -20,4 +20,4 @@
      *  1 : enable
      *  0 : disable
      */
-    $config['cops_use_url_rewriting'] = "1";
+    $config['cops_use_url_rewriting'] = "0";
