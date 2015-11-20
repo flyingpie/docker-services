@@ -10,4 +10,5 @@ docker run --name weblog -d \
   -p 2222:22 \
   -p 80 \
   -v /var/docker/marcovandenoever.com/ssh:/root/.ssh \
+  --restart=always \
   flyingpie/apache-php-git

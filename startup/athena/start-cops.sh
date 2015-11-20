@@ -8,4 +8,5 @@ docker run --name cops -d \
   -e VIRTUAL_HOST=$VHOST_BOOKS \
   -p 80 \
   -v /var/docker/owncloud/data/marco/files/clientsync/Books/:/metadata/:ro \
+  --restart=always \
   flyingpie/cops
