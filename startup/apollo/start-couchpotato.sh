@@ -2,6 +2,8 @@
 
 source variables.sh
 
+docker pull timhaak/couchpotato
+
 docker rm -f couchpotato
 
 docker run --name couchpotato -d \

@@ -2,6 +2,8 @@
 
 source variables.sh
 
+docker pull timhaak/sickrage
+
 docker rm -f sickrage
 
 docker run --name sickrage -d \

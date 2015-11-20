@@ -4,6 +4,8 @@ source variables.sh
 
 docker rm -f spotweb
 
+docker pull andyverbunt/docker-spotweb
+
 docker run --name spotweb -d \
   --link mysql:mysql \
   -e VIRTUAL_HOST=$VHOST_SPOTWEB \

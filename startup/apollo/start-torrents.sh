@@ -2,6 +2,8 @@
 
 source variables.sh
 
+docker pull jakexks/deluge-torrent-seedbox
+
 docker rm -f torrents
 
 docker run --name torrents -d \

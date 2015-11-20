@@ -2,6 +2,8 @@
 
 source variables.sh
 
+docker pull timhaak/sabnzbd
+
 docker rm -f sabnzbd
 
 docker run --name sabnzbd -d \
