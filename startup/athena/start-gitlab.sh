@@ -4,6 +4,8 @@ source variables.sh
 
 docker rm -f gitlab
 
+docker pull sameersbn/gitlab
+
 docker run --name=gitlab -d \
   --link postgresql:postgresql \
   --link redis:redisio \
@@ -11,6 +13,7 @@ docker run --name=gitlab -d \
   -e GITLAB_SSH_PORT=22 \
   -e GITLAB_HOST=$VHOST_GITLAB \
   -e GITLAB_HTTPS=true \
+  -e GITLAB_SECRETS_DB_KEY_BASE=$GITLAB_SECRETS_DB_KEY_BASE \
   -e VIRTUAL_HOST=$VHOST_GITLAB \
   -e DB_NAME=$POSTGRES_GITLAB_DB \
   -e DB_USER=$POSTGRES_GITLAB_USER \
@@ -25,4 +28,4 @@ docker run --name=gitlab -d \
   -v /var/run/docker.sock:/run/docker.sock \
   -v $(which docker):/bin/docker \
   --restart=always \
-  sameersbn/gitlab:7.9.1
+  sameersbn/gitlab

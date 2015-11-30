@@ -5,6 +5,8 @@ sudo touch /var/docker/proxy/proxy.conf
 
 docker rm -f proxy
 
+docker pull jwilder/nginx-proxy
+
 docker run --name proxy -d \
   -p 80:80 \
   -p 443:443 \

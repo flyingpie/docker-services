@@ -4,6 +4,8 @@ source variables.sh
 
 docker rm -f rss
 
+docker pull flyingpie/ttrss
+
 docker run --name rss -d \
   --link postgresql:db \
   -p 80 \

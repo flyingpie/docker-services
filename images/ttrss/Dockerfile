@@ -1,6 +1,9 @@
 FROM clue/ttrss
 MAINTAINER Marco van den Oever <marco@flyingpie.nl>
 
+RUN apt-get update && apt-get install -y \
+  git
+
 RUN git clone https://github.com/naeramarth7/clean-greader /var/www/themes/clean-greader
 RUN ln -s /var/www/themes/clean-greader/clean-greader.css /var/www/themes/clean-greader.css
 
