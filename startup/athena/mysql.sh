@@ -9,3 +9,6 @@ docker run --name mysql -d \
   -v /var/docker/mysql/data:/var/lib/mysql \
   --restart=always \
   mysql:latest
+
+docker network create net-mysql
+docker network connect net-mysql mysql

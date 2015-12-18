@@ -10,3 +10,6 @@ docker run --name postgresql -d \
   -e POSTGRES_PASSWORD=$POSTGRES_ROOT_PASSWORD \
   --restart=always \
   postgres
+
+docker network create net-pgsql
+docker network connect net-pgsql postgresql

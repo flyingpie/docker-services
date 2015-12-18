@@ -5,8 +5,7 @@ source variables.sh
 docker rm -f fileserver
 
 docker run --name fileserver -d \
-  -e VIRTUAL_HOST=$VHOST_FILESERVER \
+  -e VIRTUAL_HOST=files.flyingpie.nl \
   -v /var/docker/fileserver:/app \
-  -p 80 \
   --restart=always \
   tutum/apache-php

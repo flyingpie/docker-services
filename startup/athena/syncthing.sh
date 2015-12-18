@@ -9,5 +9,6 @@ docker run --name syncthing -d \
   -p 22000:22000 \
   -p 21025:21025/udp \
   -v /var/docker/syncthing/config:/home/syncthing/.config/syncthing \
-  -v /home/marco/sync:/home/syncthing/Sync \
+  -v /var/docker:/home/syncthing/docker-athena \
+  -v /var/backup/docker-apollo:/home/syncthing/docker-apollo \
   istepanov/syncthing
