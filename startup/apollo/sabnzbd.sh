@@ -14,6 +14,8 @@ docker run --name sabnzbd -d \
   -v /var/docker/sabnzbd/downloads:/data \
   -v /media:/media \
   -p 8080 \
-  -p 9090 \
   --restart=always \
   timhaak/sabnzbd
+
+docker network create net-media
+docker network connect net-media sabnzbd
