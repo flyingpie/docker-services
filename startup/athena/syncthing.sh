@@ -11,4 +11,5 @@ docker run --name syncthing -d \
   -v /var/backup/syncthing/config:/home/syncthing/.config/syncthing \
   -v /var/docker:/home/syncthing/docker-athena \
   -v /var/backup/docker-apollo:/home/syncthing/docker-apollo \
+  --restart=always \
   istepanov/syncthing
