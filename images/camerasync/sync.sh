@@ -1,6 +1,8 @@
 #!/bin/bash
 
-mkdir /dl
+cd /
+
+mkdir -p /dl/record
 
 ncftpget \
   -P $PORT \
@@ -11,7 +13,8 @@ ncftpget \
   /dl $DIR
 
 cd /dl/record
-for i in *.mkv; do avconv -i $i -codec copy -y $i.mp4 -loglevel error; rm $i; done
+
+for i in *.mkv; do avconv -i $i -y $i.mp4 -loglevel error; rm $i; done
 
 mv /dl/record/*.mp4 /output
 
