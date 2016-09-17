@@ -11,10 +11,7 @@ docker run --name cameraftp -d \
   -p 2020:20 \
   -p 12020-12025:12020-12025 \
   -e USER=$CAMERAFTP_USER \
-  -e PASS=$CAMERAFTP_PASSWORD \
+  -e PASS=$CAMERAFTP_PASS \
   -v /var/docker/cameraftp:/ftp \
   --restart=always \
   emilybache/vsftpd-server
-
-docker network create net-cameraftp
-docker network connect net-cameraftp cameraftp

@@ -8,7 +8,7 @@ sudo chgrp -R 33 /var/docker/owncloud
 
 docker rm -f owncloud
 
-docker pull l3iggs/owncloud
+#docker pull l3iggs/owncloud
 
 docker run --name owncloud -d \
   -e START_MYSQL=false \
@@ -17,7 +17,7 @@ docker run --name owncloud -d \
   -v /var/docker/owncloud/data:/usr/share/webapps/owncloud/data \
   -v /var/docker/owncloud/owncloud.conf:/etc/httpd/conf/extra/owncloud.conf \
   --restart=always \
-  l3iggs/owncloud
+  l3iggs/owncloud:9.0.2-1
 
 docker network create net-mail
 docker network connect net-mail owncloud
