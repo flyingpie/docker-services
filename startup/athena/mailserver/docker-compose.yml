@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+  mail:
+    image: tvial/docker-mailserver:latest
+    # build: .
+    hostname: Athena
+    domainname: flyingpie.nl
+    container_name: mail
+    ports:
+      - "25:25"
+      - "143:143"
+      - "587:587"
+      - "993:993"
+    volumes:
+      - /var/docker/mailserver/maildata:/var/mail
+      - /var/docker/mailserver/config/:/tmp/docker-mailserver/
+
+volumes:
+  maildata:
+    driver: local

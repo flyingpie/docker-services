@@ -10,4 +10,5 @@ docker run --name flyingpie3 -d \
   -v /var/docker/flyingpie3/instance:/var/lib/ghost \
   -v /var/docker/flyingpie3/index.js:/usr/src/ghost/index.js \
   -v /var/docker/flyingpie3/helpers.js:/usr/src/ghost/helpers.js \
+  --restart=always \
   ghost
