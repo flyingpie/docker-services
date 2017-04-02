@@ -9,7 +9,7 @@ docker pull gogs/gogs
 docker run --name gogs -d \
   -e VIRTUAL_HOST=git.flyingpie.nl \
   -e VIRTUAL_PORT=3000 \
-  -p 22:22 \
+  -p 229:22 \
   -v /var/docker/gogs:/data \
   --restart=always \
   gogs/gogs
