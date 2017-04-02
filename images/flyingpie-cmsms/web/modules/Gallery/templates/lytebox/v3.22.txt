@@ -1,1 +1,0 @@
-- added a ie8 fix from http://nederveld.wordpress.com/2009/07/02/lytebox-and-internet-explorer-8/

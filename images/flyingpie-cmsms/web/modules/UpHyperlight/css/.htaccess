@@ -1,4 +1,0 @@
-<Files *.css>
-  order deny,allow
-  allow from all
-</Files>
