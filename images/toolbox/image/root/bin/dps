@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker ps --all --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.CreatedAt}}\t{{.RunningFor}}"
