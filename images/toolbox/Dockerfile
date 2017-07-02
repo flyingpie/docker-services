@@ -1,28 +1,32 @@
-FROM ubuntu:latest
+FROM ubuntu:16.04
 MAINTAINER Marco van den Oever <marco@flyingpie.nl>
 
-RUN apt-get update
+RUN DEBIAN_FRONTEND=noninteractive
 
-# Docker
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
+# Prerequisites
+RUN apt-get update && apt-get install -y \
   apt-transport-https \
   ca-certificates \
   curl \
   software-properties-common
 
-RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
-RUN DEBIAN_FRONTEND=noninteractive add-apt-repository \
-  "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) \
-  stable"
+RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 
 # Apps
-RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y \
   docker-ce \
   fish \
+  libcurl3 \
+  libicu55 \
+  libunwind8 \
   toilet toilet-fonts \
-  vim
+  vim \
+  wget
+
+# Powershell
+RUN wget -q $(curl -s https://api.github.com/repos/powershell/powershell/releases/latest | grep 'browser_' | grep 'ubuntu1.16' | cut -d\" -f4)
+RUN dpkg -i $(ls / | grep powershell)
 
 # Config
 ADD image/root /root
