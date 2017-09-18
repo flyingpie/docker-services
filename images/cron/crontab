@@ -1,0 +1,2 @@
+*/15 * * * * chmod 775 -R /data/nextcloud/data
+0 * * * * docker exec nextcloud occ files:scan --all
