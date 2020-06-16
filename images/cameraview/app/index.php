@@ -10,11 +10,12 @@ error_reporting(E_ALL);
 		<title>Camera</title>
 	</head>
 	<body>
-		<ul>
 <?php
 
-$files = glob('video/*.mp4', GLOB_BRACE);
-usort($files, 'filemtime_compare');
+$files1 = glob('video/alarm_*.mp4', GLOB_BRACE);
+$files2 = glob('video/MDalarm_*.mp4', GLOB_BRACE);
+usort($files1, 'filemtime_compare');
+usort($files2, 'filemtime_compare');
 
 function filemtime_compare($a, $b)
 {
@@ -22,17 +23,35 @@ function filemtime_compare($a, $b)
 	return filemtime($b) - filemtime($a);
 }
 
-$i = 0;
-$show = 100;
-
-foreach($files as $file)
+function pr($files)
 {
-	if($i == $show) break; else ++$i;
-	#echo $file . ' - ' . date('D, d M y H:i:s', filemtime($file)) . '<br />' . "\n";
+	$i = 0;
+	$show = 100;
 
-	echo '<li><a href="' . $file . '">' . $file . '</a></li>';
+	foreach($files as $file)
+	{
+		if($i == $show) break; else ++$i;
+		#echo $file . ' - ' . date('D, d M y H:i:s', filemtime($file)) . '<br />' . "\n";
+
+		echo '<li><a href="' . $file . '">' . $file . '</a></li>';
+	}
 }
+
 ?>
-		</ul>
+
+		<div style="float: left; width: 50%;">
+			<h3>Auto</h3>
+			<ul>
+				<?php pr($files1); ?>
+			</ul>
+		</div>
+
+		<div style="float:left;">
+			<h3>Tuin</h3>
+			<ul>
+				<?php pr($files2); ?>
+			</ul>
+		</div>
+
 	</body>
 </html>
